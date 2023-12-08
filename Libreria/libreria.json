@@ -1,0 +1,59 @@
+{
+    "libros": [{
+            "nombre": "Harry Potter y la piedra filosofal",
+            "categoria": "juvenil",
+            "disponible": "si",
+            "cantidad": 3000,
+            "precio": 20,
+            "extra": 5
+        },
+        {
+            "nombre": "Cien años de soledad",
+            "categoria": "ficcion",
+            "disponible": "si",
+            "cantidad": 2500,
+            "precio": 25,
+            "extra": 8
+        },
+        {
+            "nombre": "El señor de los anillos",
+            "categoria": "fantasia",
+            "disponible": "si",
+            "cantidad": 2000,
+            "precio": 30,
+            "extra": 7
+        },
+        {
+            "nombre": "1984",
+            "categoria": "ciencia ficcion",
+            "disponible": "si",
+            "cantidad": 1500,
+            "precio": 18,
+            "extra": 6
+        },
+        {
+            "nombre": "Orgullo y prejuicio",
+            "categoria": "clasico",
+            "disponible": "si",
+            "cantidad": 1800,
+            "precio": 22,
+            "extra": 4
+        },
+        {
+            "nombre": "El código Da Vinci",
+            "categoria": "misterio",
+            "disponible": "si",
+            "cantidad": 2200,
+            "precio": 28,
+            "extra": 9
+        },
+        {
+            "nombre": "Crimen y castigo",
+            "categoria": "drama",
+            "disponible": "si",
+            "cantidad": 1700,
+            "precio": 24,
+            "extra": 5
+        }
+    ]
+}

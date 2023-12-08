@@ -1,6 +1,6 @@
 
 function enviarPeticionAsincrona(){
-    let xmlhttp = new XMLHttpRequest
+    let xmlhttp = new XMLHttpRequest()
 
     xmlhttp.onreadystatechange = function(){
         if(this.readyState == 4){

@@ -48,8 +48,9 @@ function cargarDatos(pedidos) {
 
     table.appendChild(tr);
 
-    let tr2 = document.createElement("tr");
+    
     for (let pedido of pedidos) {
+        let tr2 = document.createElement("tr");
         let td = document.createElement("td")
         let ctd = document.createTextNode(pedido.numeroPedido)
         td.appendChild(ctd)
@@ -70,8 +71,9 @@ function cargarDatos(pedidos) {
         let ctd6 = document.createTextNode(pedido.precio)
         td6.appendChild(ctd6)
         tr2.appendChild(td6)
+        table.appendChild(tr2);
     }
-    table.appendChild(tr2);
+    
 
 }
 
@@ -79,7 +81,6 @@ function cargarDatos(pedidos) {
 function actualizarDatos(){
     let cont = document.getElementById("cont")
     cont.innerHTML = ""
-    enviarPeticionAsincrona()
 }
 
 
