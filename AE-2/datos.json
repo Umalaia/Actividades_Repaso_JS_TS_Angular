@@ -1,0 +1,35 @@
+{
+     "clases": [
+        {
+            "tipo": "sobremesa",
+            "valor": 2000
+        },
+        {
+            "tipo": "portatil",
+            "valor": 1500
+        },
+        {
+            "tipo": "tablet",
+            "valor": 800
+        }
+    ],
+     "sistemas": [
+        {
+            "sys": "windows",
+            "uso": "de pago"
+        },
+        {
+            "sys": "linux",
+            "uso": "gratuito"
+        },
+        {
+            "sys": "iOs",
+            "uso": "de pago"
+        },
+        {
+            "sys": "android",
+            "uso": "gratuito"
+        }
+    ]
+    
+}

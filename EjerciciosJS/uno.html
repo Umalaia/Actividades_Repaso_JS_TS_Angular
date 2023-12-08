@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <script>
+        function edad(){
+       let edad = document.getElementById("edad")
+       let texto = document.getElementById("texto")
+       console.log("ok")
+
+       if (edad.value >=18){
+        let coment = document.createTextNode("ya tienes edad para conducir")
+        texto.appendChild(coment)
+       }else
+       console.log("no")
+    }
+    </script>
+</head>
+<body>
+    <h1>Introduce tu edad</h1>
+    <label>Edad :</label>
+    <input type="number" id="edad"/>
+    <button onclick="edad()">pulsar</button>
+    <p id="texto"></p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pizzeria Mamma Mia</h1>
+        <form action="procesar.jsp" method="post" id="formulario">
+                <label for ="nombre">Nombre: </label>
+                <input id="nombre" name="nombre" type="text" placeholder="Introduce tu nombre" required/>
+                </br>
+                <label for ="direccion">Dirección: </label>
+                <input id="direccion" name="direccion" type="text" placeholder="Introduce tu direccion" required/>
+                </br>
+                <label for ="telefono">Teléfono: </label>
+                <input id="telefono" name="telefono" type="tel" placeholder="Introduce tu telefono" required/>
+                </br>
+                <label for ="email">Email: </label>
+                <input id="email" name="email" type="email" placeholder="example@gmail.com" required/>
+                </br></br>
+                <div id="contenedor">
+                </div>
+                <button type="button" id="procesar" onclick="procesarPedido()">PROCESAR PEDIDO</button>
+        </form>
+</body>
+</html>

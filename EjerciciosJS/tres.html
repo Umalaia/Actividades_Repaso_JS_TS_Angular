@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <script>
+
+        function mayor(){
+        let edad1 = document.getElementById("ed1")
+        let edad2 = document.getElementById("ed2")
+        let edad3 = document.getElementById("ed3")
+        let nombre1 = document.getElementById("nom1")
+        let nombre2 = document.getElementById("nom2")
+        let nombre3 = document.getElementById("nom3")
+
+        if(edad1.value > edad2.value && edad1.value > edad3.value){
+            alert("El mayor es " + edad1.value + " con nombre " + nombre1.value)
+        }
+        else if(edad2.value > edad1.value && edad2.value > edad3.value){
+            alert("El mayor es " + edad2.value + " con nombre " + nombre2.value)
+
+        }else if(edad3.value > edad1.value && edad3.value > edad2.value){
+            alert("El mayor es " + edad3.value + " con nombre " + nombre3.value)
+        }
+    }
+    </script>
+</head>
+<body>
+ 
+    <label>Inserte las edades</label>
+    <input type="number" id="ed1"/>
+    <input type="number" id="ed2"/>
+    <input type="number" id="ed3"/>
+    <br><br>
+    <label>Inserte los nombres</label>
+    <input type="text" id="nom1"/>
+    <input type="text" id="nom2"/>
+    <input type="text" id="nom3"/>
+    <br><br>
+    <button onclick="mayor()">ENVIAR</button>
+
+</body>
+</html>

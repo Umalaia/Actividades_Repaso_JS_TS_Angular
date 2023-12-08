@@ -1,0 +1,29 @@
+{
+  "tamaños": [{
+      "precio": 5,
+      "nombre": "Pequeña"
+    },
+    {
+      "precio": 10,
+      "nombre": "Mediana"
+    },
+    {
+      "precio": 15,
+      "nombre": "Grande"
+    }
+  ],
+
+  "ingredientes": [{
+      "precio": 1,
+      "nombre": "Aceituna"
+    },
+    {
+      "precio": 2,
+      "nombre": "Alcaparras"
+    },
+    {
+      "precio": 3,
+      "nombre": "Piña"
+    }
+  ]
+}

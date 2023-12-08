@@ -1,0 +1,32 @@
+{
+    "pedidos" :[
+        {
+            "numeroPedido" : 1,
+            "fecha" : "2/11/2023",
+            "nombreCliente" : "Paz",
+            "tamañoPizza" : "Mediana",
+            "precio" : 15
+        },
+        {
+            "numeroPedido" : 2,
+            "fecha" : "20/10/2023",
+            "nombreCliente" : "Pol",
+            "tamañoPizza" : "Grande",
+            "precio" : 20
+        },
+        {
+            "numeroPedido" : 3,
+            "fecha" : "10/9/2023",
+            "nombreCliente" : "Petra",
+            "tamañoPizza" : "Pequeña",
+            "precio" : 10
+        },
+        {
+            "numeroPedido" : 4,
+            "fecha" : "8/12/2023",
+            "nombreCliente" : "Paco",
+            "tamañoPizza" : "Grande",
+            "precio" : 18
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <script>
+        function notas(){
+            let nota = document.getElementById("nota")
+            let texto = document.getElementById("texto")
+            let suspenso = document.createTextNode("suspenso")
+            let aprobado = document.createTextNode("aprobado")
+            
+            if(nota.value == 0){
+                texto.appendChild(suspenso)
+            }else
+            texto.appendChild(aprobado)
+        }
+    </script>
+</head>
+<body>
+    <h1>Notas</h1>
+    <label>Escribe una nota : </label>
+    <input type="number" id="nota"/>
+    <button onclick="notas()">NOTAS</button>
+    <p id="texto"></p>
+</body>
+</html>
