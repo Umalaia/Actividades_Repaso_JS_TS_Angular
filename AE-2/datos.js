@@ -20,8 +20,11 @@ function procesarRespuesta(jsonDoc) {
   var clases = objetoJson.clases;
   var sistemas = objetoJson.sistemas;
   console.log(objetoJson);
-
-  let contenedor = document.getElementById("cont");
+    // Crear un div con un id dentro y agregarlo al html
+    var contenedor = document.createElement("div");
+    contenedor.id = "cont"; // Asignar un ID al contenedor
+    // Agregar el contenedor al cuerpo del documento
+    document.body.appendChild(contenedor);
 
   let h3Pc = document.createElement("h3");
   let clp = document.createTextNode("Ordenadores :");

@@ -1,8 +1,10 @@
-window.onload = cargarDatos;
 
 function cargarDatos() {
 
-    let contenedor = document.getElementById("contenedor")
+    let div = document.createElement("div")
+    div.id = "contenedor"
+    document.body.appendChild(div)
+
     let titulo = document.createElement("h1");
     let t1cont = document.createTextNode("FORMULARIO");
     titulo.appendChild(t1cont);
@@ -237,3 +239,6 @@ function procesarPedido() {
     }
 
 */
+
+
+window.onload = cargarDatos;
