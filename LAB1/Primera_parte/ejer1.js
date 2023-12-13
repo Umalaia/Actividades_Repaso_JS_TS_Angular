@@ -18,3 +18,23 @@ function calcularMedia(){
 
 let media = calcularMedia(array)
 console.log(media)
+
+
+
+
+let array2 = [10,20,35,40,500,66,80,700,90,30]
+
+function calcularMedia(array2){
+    let contador = 0
+    let acumulador = 0
+    for(let num of array2){
+        if(num>=0 && num<=100){
+            contador+=num
+            acumulador++
+        }
+    }let rdo = contador/acumulador
+    console.log(rdo)
+}
+
+calcularMedia(array2)
+

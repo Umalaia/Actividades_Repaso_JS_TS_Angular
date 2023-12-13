@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2: Campos de Texto sin for...of</title>
+
+    <script>
+        // Función para agregar campos de texto uno a uno
+        function agregarCampoTexto(nombreCampo) {
+            var contenedorDiv = document.getElementById("miContenedor");
+
+            var etiqueta = document.createElement("label");
+            etiqueta.textContent = nombreCampo + ": ";
+
+            var input = document.createElement("input");
+            input.type = "text";
+            input.name = nombreCampo.toLowerCase();
+
+            contenedorDiv.appendChild(etiqueta);
+            contenedorDiv.appendChild(input);
+            contenedorDiv.appendChild(document.createElement("br"));
+        }
+
+        function radioButtons() {
+            var contenedorDiv = document.getElementById("miContenedor")
+            var campos = ["ele1", "ele2", "ele3", "ele4"]
+            for (let campo of campos) {
+                let labelCampo = document.createElement("lable")
+                labelCampo.for = "elementos"
+                let cCampo = document.createTextNode(campo)
+                labelCampo.appendChild(cCampo)
+                contenedorDiv.appendChild(labelCampo)
+
+                let inputCampo = document.createElement("input")
+                inputCampo.type = "radio"
+                inputCampo.id = campo
+                inputCampo.name = "elementos"
+                inputCampo.value = campo
+                contenedorDiv.appendChild(inputCampo)
+            }
+
+
+        }
+
+
+
+        window.onload = function () {
+            agregarCampoTexto("DNI");
+            agregarCampoTexto("Nombre");
+            agregarCampoTexto("Apellidos");
+            agregarCampoTexto("Dirección");
+            agregarCampoTexto("Teléfono");
+            radioButtons()
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Contenedor DIV -->
+    <form>
+    <div id="miContenedor"></div>
+    <input type="submit" id="formulario" value="Mandar Formulario">
+    </form>
+</body>
+
+</html>
